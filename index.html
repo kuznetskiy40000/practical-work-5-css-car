@@ -1,42 +1,22 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="CSS-машинка — практическая работа 5" />
-  <title>CSS Car — Практическая работа 5</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Машинка</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="scene">
-    <div class="sun" aria-hidden="true"></div>
-    <div class="cloud cloud-one" aria-hidden="true"></div>
-    <div class="cloud cloud-two" aria-hidden="true"></div>
-    <div class="hill hill-back" aria-hidden="true"></div>
-    <div class="hill hill-front" aria-hidden="true"></div>
-    <div class="road" aria-hidden="true"><span class="road-line"></span></div>
-
-    <section class="car-wrap" aria-label="Машинка, нарисованная средствами CSS">
-      <div class="car">
-        <div class="car-body">
-          <div class="window window-left"></div>
-          <div class="window window-right"></div>
-          <span class="door-handle"></span>
-          <span class="lamp lamp-front"></span>
-          <span class="lamp lamp-back"></span>
-        </div>
-        <div class="bumper bumper-front"></div>
-        <div class="bumper bumper-back"></div>
-        <div class="wheel wheel-left"><span></span></div>
-        <div class="wheel wheel-right"><span></span></div>
+  <div class="road">
+    <div class="car">
+      <div class="body">
+        <div class="window one"></div>
+        <div class="window two"></div>
+        <div class="light"></div>
       </div>
-    </section>
-
-    <header class="caption">
-      <p class="kicker">Практическая работа 5</p>
-      <h1>CSS road trip</h1>
-      <p>Машинка шириной 200px, собранная только из HTML и CSS.</p>
-    </header>
-  </main>
+      <div class="wheel left"><i></i></div>
+      <div class="wheel right"><i></i></div>
+    </div>
+  </div>
 </body>
 </html>
