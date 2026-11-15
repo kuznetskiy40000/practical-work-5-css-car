@@ -1,0 +1,81 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
+body { overflow: hidden; background: #9ed8ee; }
+.road {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 35%;
+  background: #555;
+  border-top: 8px solid #6cab62;
+}
+.road:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 55%;
+  width: 100%;
+  height: 6px;
+  background: repeating-linear-gradient(90deg, #fff 0 60px, transparent 60px 120px);
+}
+.car {
+  position: absolute;
+  left: 0;
+  bottom: 50px;
+  width: 200px;
+  height: 100px;
+  animation: go 4s linear forwards;
+}
+.body {
+  position: absolute;
+  left: 10px;
+  bottom: 25px;
+  width: 180px;
+  height: 55px;
+  background: #e64b3c;
+  border: 3px solid #a72d26;
+  border-radius: 18px 28px 8px 8px;
+}
+.body:before {
+  content: "";
+  position: absolute;
+  left: 35px;
+  top: -30px;
+  width: 95px;
+  height: 30px;
+  background: #e64b3c;
+  border: 3px solid #a72d26;
+  border-bottom: 0;
+  border-radius: 35px 35px 0 0;
+}
+.window {
+  position: absolute;
+  top: -24px;
+  width: 40px;
+  height: 24px;
+  background: #b9e5ee;
+  border: 2px solid #a72d26;
+}
+.one { left: 42px; }
+.two { left: 88px; }
+.light { position: absolute; right: -7px; top: 23px; width: 9px; height: 13px; background: yellow; }
+.wheel {
+  position: absolute;
+  bottom: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #222;
+  border: 6px solid #111;
+}
+.wheel i { display: block; width: 16px; height: 16px; margin: 7px; border-radius: 50%; background: #ddd; }
+.left { left: 28px; }
+.right { right: 28px; }
+@keyframes go {
+  from { transform: translateX(-220px); }
+  to { transform: translateX(calc(100vw - 250px)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .car { animation: none; transform: translateX(calc(100vw - 250px)); }
+}
